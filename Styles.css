@@ -1,7 +1,10 @@
-.my-col:nth-child(even) {
-  background-color: black;
+.my-container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 
-.my-col:nth-child(odd) {
-  background-color: blue;
+.header {
+  grid-area: 1 / 1 / 3/ 7; /*rs / cs / re / ce*/
 }

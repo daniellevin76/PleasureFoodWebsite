@@ -1,53 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Triangeln</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="styles.css">
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Pleasure Food</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 </head>
-
 <body>
-    <div class="container my-container">
-         <div class="row my-row">
-             <div class="col-md-2 my-col">sidebar</div>
-             <div class="col-md-10 my-col">
-               
-                     <img src="./img/web pleasure food japan.png" alt="" class = "img-fluid">
-              
-             </div>
-         </div>
-         <div class="row my-row">
-             <div class="col-md-2 my-col">sidebar</div>
 
-             <div class="col-md-10 col-xs-6 my-col">
-          
-                    <img src="./img/one-piece-plate.jpg" alt="" class="img-fluid" >
-               
-              </div>
-         </div>
-         <div class="row my-row">
-            <div class="col-md-6 my-col">Map</div>
-            <div class="col-md-6 my-col">Contact</div>
-         </div>
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row my-row">
+
+      <header>
+
+        <div class="two columns">
+              <div class="side-bar">
+
+                <div id="mySidenav" class="sidenav">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                  <a href="#">TRIANGELN</a>
+                  <a href="#">VÄRNHEM</a>
+                  <a href="#">ABOUT</a>
+                  <a href="#">MENY</a>
+                  <a href="#">KONTAKT</a>
+                </div>
+                <span style="color:white;font-size:50px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                  
+                  <div class="social-wrapper">
+                  <a href="#" class="fa fa-facebook"></a>
+                  <a href="#" class="fa fa-instagram"></a>
+                </div>
+            </div>
+       </div>
+
+        
+        <div class="three columns area">
+          <h4> TRIANGELN</h4>
+        </div>
+
+     
+    </header>
+
     </div>
 
+    <div class="row">
+      <div class="my-section">
+        <div class="backGround">Triangeln</div>
+        
+<div class="five columns img-wrapper">
+              
+<div class="slideshow-container">
 
+  <div class="mySlides carousel">
+    <div class="numbertext">1 / 3</div>
+    <img src="/img/many_pieces-plate.jpg" style="width:100%">
+    <div class="text">Caption Text</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="/img/IMGL0877.jpg" style="width:100%">
+    <div class="text">Caption Two</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="/img/IMGL1241.jpg" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+  
+  </div>
+  <br>
+  <div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+  </div>
+          </div>
+          <div class="menu-wrapper">
+            <a href="#">MENY</a>
+            
+          </div>
+          
+      </div>
+    </div>
 
+    <div class="row">
+      <div class="eight columns">
+        <div class="map-wrapper">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18033.447565022125!2d12.999828648032205!3d55.59886445113719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x319dd19f8a2b188f!2sPleasure%20Food%20Japan!5e0!3m2!1ssv!2sse!4v1605610654387!5m2!1ssv!2sse" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        
+        </div>
+      </div>
+      <div class="four columns">
+        <div class="contact-wrapper">
+          <h6>Hur du kommer i kontakt med oss</h6>
+          <p>Here comes contact information</p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+           Ab cupiditate, et nostrum tenetur pariatur neque debitis asperiores, 
+           facilis soluta sunt aliquid dignissimos explicabo, quis ipsum laborum consequatur quod! Nisi, temporibus.
+        </div>
+      </div>
 
+    </div>
+  </div>
 
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
+  <!------------Scripts-->
 
-
-
-
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
-
+  <script src="main.js"></script>
 </body>
 </html>
