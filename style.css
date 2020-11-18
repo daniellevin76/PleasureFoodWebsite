@@ -41,6 +41,7 @@ body {
   top: 1rem;
   right: 3rem;
   color: #bb0303;
+  font-family: "Nothing You Could Do", cursive;
   font-weight: bold;
 }
 
@@ -123,7 +124,6 @@ body {
   position: absolute;
   background-color: black;
   min-width: 140px;
-
   z-index: 1;
 }
 
@@ -170,6 +170,8 @@ body {
 }
 
 .contact-wrapper {
+  font-family: "Lateef", cursive;
+  font-family: "Open Sans", sans-serif;
   padding-top: 3%;
   padding-left: 6%;
   height: 100%;
