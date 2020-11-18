@@ -47,7 +47,6 @@ body {
 .menu-wrapper {
   margin-left: 0.5rem;
   height: 22px;
-  border-bottom: 1px solid transparent;
   transition: border-bottom 0.5s;
 }
 
@@ -124,7 +123,7 @@ body {
   position: absolute;
   background-color: black;
   min-width: 140px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
   z-index: 1;
 }
 
