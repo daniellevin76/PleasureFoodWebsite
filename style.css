@@ -40,7 +40,7 @@ body {
   position: fixed;
   top: 1rem;
   right: 3rem;
-  color: #bb0303;
+  color: #ec0c0c;
 }
 
 .menu-wrapper {
@@ -54,10 +54,12 @@ body {
   text-decoration: none;
   transition: color 0.5s;
   font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
 }
 
 .menu-wrapper a:hover {
-  color: #bb0303;
+  color: #ec0c0c;
 }
 
 .section-triangeln {
@@ -95,7 +97,7 @@ body {
 }
 
 .fa-instagram {
-  background: #bb0303;
+  background: #ec0c0c;
   color: white;
 }
 
@@ -136,7 +138,7 @@ body {
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
   background-color: black;
-  color: #bb0303;
+  color: #ec0c0c;
 }
 
 /* Show the dropdown menu on hover */
@@ -147,7 +149,7 @@ body {
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
   background-color: black;
-  color: #bb0303;
+  color: #ec0c0c;
 }
 
 .area {
@@ -173,8 +175,8 @@ body {
   padding-left: 6%;
   height: 100%;
   width: 40%;
-  color: white;
+  color: rgb(204, 165, 165);
   text-align: center;
-  line-height: 1.3;
-  font-size: 1rem;
+  line-height: 1.5rem;
+  font-size: 0.8rem;
 }
