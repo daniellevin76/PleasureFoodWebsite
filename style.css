@@ -5,7 +5,7 @@
 }
 
 .container {
-  font-family: "Lato", sans-serif;
+  font-family: "Cormorant Garamond", serif;
   display: grid;
   height: 250vh;
   grid-template-rows: repeat(3, 1fr);
@@ -36,6 +36,7 @@ section {
 }
 
 aside {
+  padding-top: 4rem;
   grid-area: aside;
   background-color: rgb(53, 52, 52);
   position: relative;
@@ -48,11 +49,11 @@ aside {
 }
 
 #logo {
+  margin-top: 7%;
   display: block;
   font-size: 2rem;
-  letter-spacing: 3px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  letter-spacing: 2px;
+  text-align: center;
 }
 #logo h4 {
   color: rgb(228, 15, 15);
