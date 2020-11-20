@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">  
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">    
-
+     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet"> 
      <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -18,62 +16,57 @@
 <body>
     <div class="container">
 
-        <div class="header">
+       <header>
+           <div id="logo">
+                <h3>
+                    PLEASURE FOOD
+                </h3>
+                <h4>
+                    SUSHI
+                </h4>
+           </div>
+       </header>
+       
+       <aside>
+          
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">TRIANGELN</a>
+            <a href="#">VÄRNHEM</a>
+            <a href="#">ABOUT</a>
+            <a href="#">KONTAKT</a>
+          </div>
+          
+         
+          <span style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+          
 
-            <div class="left">
-            
-                <div class="dropdown">
-                    <button class="dropbtn">VÅRA RESTAURANGER</button>
-                    <div class="dropdown-content">
-                    <a href="index.html">TRIANGELN</a>
-                    <a href="varnhem.html">VÄRNHEM</a>
-                    </div>
-                </div>
-                <div class="social-wrap">
-                    <a href="https://www.facebook.com/Pleasure-Food-Sushi-165675607444259/?ref=page_internal" target="_blank" class="fa fa-facebook"></a>
-                    <a href="https://www.instagram.com/pleasure_food_japan/?hl=sv" target="_blank" class="fa fa-instagram"></a>
-                </div>
-                <div class="menu-wrapper">
-                    <a href="#">MENY</a>
-                </div>
-                
-            </div>
-            
-            <div class="right">
-                <div class="area">
-                    <h3>TRIANGELN</h3>
-                </div>
-            </div>
-            
-            
+        <div class="social">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
         </div>
+       
+       </aside>
 
-        <div class="section-triangeln">
+       <section>
+            <div class="section-triangeln"></div>
+       </section>
 
-        </div>
-        
-        <div class="footer">
-            <div class="map-wrapper">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d9015.931954367721!2d13.008771283296056!3d55.60230972473116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1spleasure%20food%20sushi!5e0!3m2!1ssv!2sse!4v1605717974588!5m2!1ssv!2sse" width="560" height="340" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
-              <div class="contact-wrapper">
-
-                    <P> <strong> KONTAKTINFORMATION</strong></P>
-                   
-                      SPÅNGATAN 5 <br>
-                      MALMÖ<br>
-                      Tel: 040-615 36 90 <br>
-                      <br>
-                      
-                      <strong>Öppettider</strong>  <br>
-                      Måndag - TORSDAG: 11:00 - 15:00 
-                       & 17:00 - 20:00 <br>
-                      FREDAG: 11:00 - 20:00 <br>
-                      Lördag: 12:00 - 20:00 <br>
-                  
-              </div>
-        </div>
+        <footer>
+            
+                <div class="map-wrapper">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d9016.099121028104!2d13.005724291533223!3d55.60158238820914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1spleasure%20food%20sushi!5e0!3m2!1ssv!2sse!4v1605808693646!5m2!1ssv!2sse" width="700" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                <div class="contact-wrapper"> 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa numquam architecto 
+                    odio corrupti quidem error dignissimos est itaque,
+                     a assumenda officiis quibusdam laboriosam libero repellat aperiam eos cupiditate! Ipsum, tempora.
+                </div>
+           
+       </footer>
+   
     </div>
-    
+      <script src="/main.js"></script>
 </body>
 
 </html>

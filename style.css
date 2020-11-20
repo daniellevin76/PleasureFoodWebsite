@@ -1,73 +1,87 @@
-.container {
-  padding: 2rem;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
 
-  background-color: black;
+.container {
+  font-family: "Lato", sans-serif;
   display: grid;
-  height: 140vh;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+  height: 270vh;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: 0.2fr 2fr 0.2fr;
+  grid-gap: 2px;
   grid-template-areas:
-    "header header header"
-    "section section section"
-    "footer footer footer";
+    "aside header header"
+    "aside section section"
+    "aside footer footer";
 }
 
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
-.header {
+header {
+  display: flex;
   grid-area: header;
-  background-image: url("/img/web\ pleasure\ food\ japan.png");
+  background-image: url("/img/sushi-header.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 22rem;
+  justify-content: center;
+}
+
+section {
+  grid-area: section;
+}
+
+aside {
+  grid-area: aside;
+  background-color: rgb(53, 52, 52);
   position: relative;
 }
 
-.left {
+.social {
   position: fixed;
-  top: 2rem;
-  left: 1.5rem;
+  top: 40%;
+  left: 3%;
 }
 
-.left a {
+#logo {
   display: block;
-  margin-bottom: 1rem;
+  font-size: 2rem;
+  letter-spacing: 3px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#logo h4 {
+  color: rgb(228, 15, 15);
 }
 
-.right .area {
-  position: fixed;
-  top: 1rem;
-  right: 3rem;
-  color: #ec0c0c;
+.area {
+  grid-area: area;
+  font-size: 2rem;
+  letter-spacing: 3px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-.menu-wrapper {
-  margin-left: 0.5rem;
-  height: 22px;
-  transition: border-bottom 0.5s;
+.social {
+  grid-area: social;
+  height: 10rem;
+  width: 10rem;
 }
 
-.menu-wrapper a {
-  color: #8a8a8a;
-  text-decoration: none;
-  transition: color 0.5s;
-  font-weight: bold;
-  font-size: 1.2rem;
-  line-height: 1.2rem;
+.social a {
+  display: block;
+  position: center;
 }
-
-.menu-wrapper a:hover {
-  color: #ec0c0c;
-}
-
 .section-triangeln {
-  grid-area: section;
+  height: 100%;
   background-image: url("/img/nya-triangeln.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 22rem;
 }
 
 .section-varnhem {
@@ -79,12 +93,12 @@ body {
 }
 
 .fa {
-  padding: 10px;
+  padding: 5px;
   font-size: 30px;
-  width: 40px;
+  width: 50px;
   text-align: center;
   text-decoration: none;
-  margin: 5px 2px;
+  margin: 5px 5px;
 }
 
 .fa:hover {
@@ -97,86 +111,81 @@ body {
 }
 
 .fa-instagram {
-  background: #ec0c0c;
+  background: #bb0303;
   color: white;
 }
-
-/* Style The Dropdown Button */
-.dropbtn {
-  background-color: black;
-  color: #8a8a8a;
-  padding: 0px;
-  font-size: 0.8rem;
-  border: none;
-  cursor: pointer;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-  margin-bottom: 6rem;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: black;
-  min-width: 140px;
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
   z-index: 1;
+  top: 0%;
+  left: 0%;
+  background-color: rgb(77, 70, 70);
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 60px;
 }
 
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: #8a8a8a;
-  padding: 4px 8px;
+span {
+  color: rgb(224, 226, 233);
+  margin-left: 3rem;
+  padding-top: 3rem;
+  position: auto;
+  position: fixed;
+  width: 1rem;
+  height: 1rem;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
   text-decoration: none;
+  font-size: 25px;
+  color: #ebe2e2;
   display: block;
+  transition: 0.3s;
 }
 
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: black;
-  color: #ec0c0c;
+.sidenav a:hover {
+  color: rgb(228, 15, 15);
 }
 
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
 }
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-  background-color: black;
-  color: #ec0c0c;
-}
-
-.area {
-  color: whitesmoke;
-}
-
-.footer {
-  margin-top: 1rem;
-  padding-right: 9%;
-  padding-left: 9.5%;
-  height: 22rem;
+footer {
   grid-area: footer;
   display: flex;
 }
 
-.map-wrapper map {
-  height: 22rem;
+.map-wrapper {
+  grid-area: map-wrapper;
+  background-color: aqua;
+  height: auto;
   width: 50%;
 }
 
 .contact-wrapper {
-  padding-top: 3%;
-  padding-left: 6%;
-  height: 100%;
-  width: 40%;
-  color: rgb(204, 165, 165);
+  grid-area: contact-wrapper;
+  background-color: rgb(53, 52, 52);
+  color: rgb(189, 232, 252);
   text-align: center;
-  line-height: 1.5rem;
-  font-size: 0.8rem;
+  height: auto;
+  width: 50%;
+  text-align: center;
+  padding: 3rem;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
 }
