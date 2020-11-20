@@ -7,7 +7,7 @@
 .container {
   font-family: "Lato", sans-serif;
   display: grid;
-  height: 270vh;
+  height: 250vh;
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: 0.2fr 2fr 0.2fr;
   grid-gap: 2px;
@@ -165,14 +165,13 @@ footer {
 
 .map-wrapper {
   grid-area: map-wrapper;
-  background-color: aqua;
   height: auto;
   width: 50%;
 }
 
 .contact-wrapper {
   grid-area: contact-wrapper;
-  background-color: rgb(53, 52, 52);
+  background-color: rgb(94, 92, 92);
   color: rgb(189, 232, 252);
   text-align: center;
   height: auto;
