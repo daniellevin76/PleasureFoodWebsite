@@ -7,7 +7,7 @@
 .container {
   font-family: "Cormorant Garamond", serif;
   display: grid;
-  height: 250vh;
+  height: 300vh;
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: 0.2fr 2fr 0.2fr;
   grid-gap: 2px;
@@ -31,6 +31,15 @@ header {
   justify-content: center;
 }
 
+#varnhem {
+  display: flex;
+  grid-area: header;
+  background-image: url("/img/louis-hansel-shotsoflouis-8FWQQXMspEM-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-content: center;
+}
+
 section {
   grid-area: section;
 }
@@ -45,38 +54,25 @@ aside {
 .social {
   position: fixed;
   top: 40%;
-  left: 3%;
-}
-
-#logo {
-  margin-top: 7%;
-  display: block;
-  font-size: 2rem;
-  letter-spacing: 2px;
-  text-align: center;
-}
-#logo h4 {
-  color: rgb(228, 15, 15);
-}
-
-.area {
-  grid-area: area;
-  font-size: 2rem;
-  letter-spacing: 3px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
-
-.social {
-  grid-area: social;
-  height: 10rem;
-  width: 10rem;
+  left: 2%;
 }
 
 .social a {
   display: block;
   position: center;
 }
+#logo {
+  margin-top: 7%;
+  display: block;
+  font-size: 2rem;
+  line-height: 2.2rem;
+  letter-spacing: 2.2px;
+  text-align: center;
+}
+#logo h4 {
+  color: rgb(228, 15, 15);
+}
+
 .section-triangeln {
   height: 100%;
   background-image: url("/img/nya-triangeln.jpg");
@@ -86,17 +82,18 @@ aside {
 }
 
 .section-varnhem {
+  height: 100%;
   grid-area: section;
-  background-image: url("/img/varnhem.jpg");
+  background-image: url("/img/entre1.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  height: 22rem;
+  background-size: cover;
 }
 
 .fa {
   padding: 5px;
   font-size: 30px;
-  width: 50px;
+  width: 3rem;
   text-align: center;
   text-decoration: none;
   margin: 5px 5px;
@@ -141,7 +138,7 @@ span {
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 1.5rem;
   color: #ebe2e2;
   display: block;
   transition: 0.3s;
@@ -174,11 +171,12 @@ footer {
   grid-area: contact-wrapper;
   background-color: rgb(94, 92, 92);
   color: rgb(189, 232, 252);
+  width: 50%;
+  padding: 3rem;
   text-align: center;
   height: auto;
-  width: 50%;
-  text-align: center;
-  padding: 3rem;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
 }
 
 @media screen and (max-height: 450px) {
