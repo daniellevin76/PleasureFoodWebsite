@@ -63,7 +63,7 @@ aside {
   position: center;
 }
 #logo {
-  margin-top: 7%;
+  margin-top: 13%;
   display: block;
   font-size: 2rem;
   line-height: 2.2rem;
@@ -84,12 +84,18 @@ aside {
 }
 
 .section-triangeln a {
-  color: #0d275e;
   position: absolute;
   bottom: 1rem;
   left: 49%;
   text-decoration: none;
   font-size: 2rem;
+  height: 3rem;
+  width: 8rem;
+  border-style: solid;
+  border-width: 3px;
+  border-color: rgb(53, 52, 52);
+  text-align: center;
+  color: rgb(53, 52, 52);
 }
 
 .section-varnhem {
