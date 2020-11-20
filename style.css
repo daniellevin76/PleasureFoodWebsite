@@ -42,6 +42,7 @@ header {
 
 section {
   grid-area: section;
+  position: relative;
 }
 
 aside {
@@ -79,6 +80,16 @@ aside {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  position: relative;
+}
+
+.section-triangeln a {
+  color: #0d275e;
+  position: absolute;
+  bottom: 1rem;
+  left: 49%;
+  text-decoration: none;
+  font-size: 2rem;
 }
 
 .section-varnhem {
