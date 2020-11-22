@@ -24,7 +24,7 @@ body {
 header {
   display: flex;
   grid-area: header;
-  background-image: url("/img/sushi-header.jpg");
+  background-image: url("/img/louis-hansel-shotsoflouis-8FWQQXMspEM-unsplash.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -34,7 +34,7 @@ header {
 #varnhem {
   display: flex;
   grid-area: header;
-  background-image: url("/img/louis-hansel-shotsoflouis-8FWQQXMspEM-unsplash.jpg");
+  background-image: url("/img/cath-smith-y1TA9ipElvs-unsplash.jpg");
   background-repeat: no-repeat;
   background-position: center;
   justify-content: center;
@@ -76,26 +76,11 @@ aside {
 
 .section-triangeln {
   height: 100%;
-  background-image: url("/img/nya-triangeln.jpg");
+  background-color: rgb(224, 221, 221);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
-}
-
-.section-triangeln a {
-  position: absolute;
-  bottom: 1rem;
-  left: 49%;
-  text-decoration: none;
-  font-size: 2rem;
-  height: 3rem;
-  width: 8rem;
-  border-style: solid;
-  border-width: 3px;
-  border-color: rgb(53, 52, 52);
-  text-align: center;
-  color: rgb(53, 52, 52);
 }
 
 .section-varnhem {
@@ -179,6 +164,8 @@ footer {
 }
 
 .map-wrapper {
+  background-color: rgb(94, 92, 92);
+  padding: 3rem 2rem 0rem 2rem;
   grid-area: map-wrapper;
   height: auto;
   width: 50%;
